@@ -6,7 +6,26 @@
 </head>
 
 <body>
-    <a href="/profile">Profile</a>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Homepage</a>
+            </li>
+            <% if(user){%>
+                <li>
+                    <a href="/auth/logout">logout</a>
+                </li>
+            <% } else{%>
+                <li>
+                    <a href="/auth/login">login</a>
+                </li>
+            <% } %>
+            <li>
+                <a href="/profile/">profile</a>
+            </li>
+        </ul>
+    </nav>
+
     <h1>Welcome!
         <%= user.username%>
     </h1>
