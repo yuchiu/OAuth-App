@@ -7,5 +7,8 @@ module.exports={
     },
     mongodb:{
         dbURI:"mongodb://admin:password@ds141657.mlab.com:41657/oauth-app"
+    },
+    session:{
+        cookieKey:'yuchiuRandomCookieKey'
     }
 }
